@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Sample</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Feature 1: Responsive Navigation Bar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <h1 class="text-2xl font-bold text-blue-600">Brand</h1>
+          </div>
+          <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">Features</a>
+            <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Feature 2: Hero Section with Background Image -->
+    <header
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('blackhole.png')"
+    >
+      <div
+        class="flex items-center justify-center h-full bg-black bg-opacity-50"
+      >
+        <div class="text-center">
+          <h1 class="text-white text-5xl font-bold mb-4">
+            Welcome to Tailwind World
+          </h1>
+          <p class="text-gray-300 text-xl mb-8">
+            Effortless styling with utility-first CSS.
+          </p>
+          <a
+            href="#"
+            class="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Feature 3: Flexbox for Layout -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Our cards
+        </h2>
+        <div class="flex flex-wrap -mx-4">
+          <!-- Feature 4: Card with Shadow and Hover Effects -->
+          <div class="w-full md:w-1/3 px-4 mb-8">
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+            >
+              <h3 class="text-xl font-semibold mb-4">Card One</h3>
+              <p class="text-gray-600">Flexbox for Layout</p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/3 px-4 mb-8">
+            <div
+              class="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:-translate-y-2 hover:shadow-2xl hover:bg-opacity-50 hover:bg-blue-700"
+            >
+              <h3 class="text-xl font-semibold mb-4">Card two</h3>
+              <p class="text-gray-600">Hover effect</p>
+            </div>
+          </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Gradient and Animation Card</h2>
+          <div class="flex justify-center">
+            <!-- Card with Gradient and Animation -->
+            <div class="w-full md:w-1/3 px-4">
+              <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-lg shadow-lg transform transition-all hover:scale-105 animate-pulse">
+                <h3 class="text-2xl font-bold mb-4">Animated Gradient Card</h3>
+                <p class="text-white text-opacity-90 mb-4"> 
+                  This card showcases a beautiful gradient and a smooth pulsing animation effect. Hover over to see the scale effect!
+                </p>
+                <a href="#" class="inline-block bg-white text-blue-600 py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Gradient and Animation Card</h2>
+          <div class="flex justify-center">
+            <!-- Card with Hover scale effect -->
+            <div class="w-full md:w-1/3 px-4">
+              <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+                <h3 class="text-2xl font-bold mb-4">Not animated Gradient Card</h3>
+                <p class="text-white text-opacity-90 mb-4">
+                  Hover over to see the scale effect!
+                </p>
+                <a href="#" class="inline-block bg-white text-blue-600 py-2 px-4 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-16 bg-gray-100 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-200 mb-8">Tailwind Features: Clip Paths, Visibility, Dark Mode</h2>
+          <div class="flex flex-wrap -mx-4">
+            
+            <!-- Card 1: Clip Path (Custom Shape) -->
+            <div class="w-full md:w-1/3 px-4 mb-8">
+              <div class="relative bg-gradient-to-r from-teal-500 to-blue-500 text-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-yellow-500 clip-path-polygon"></div>
+                <h3 class="text-2xl font-bold relative">Clip Path Card</h3>
+                <p class="relative text-white text-opacity-90 mb-4 z-10">
+                  This card uses a custom clip path to create a unique shape overlay with a gradient.
+                </p>
+              </div>
+            </div>
+      
+            <!-- Card 2: Responsive Visibility -->
+            <div class="w-full md:w-1/3 px-4 mb-8">
+              <div class="bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-200 p-8 rounded-lg shadow-lg transition-transform">
+                <h3 class="text-2xl font-bold mb-4">Responsive Visibility Card</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  This card demonstrates responsive visibility. The additional content below is only visible on larger screens.
+                </p>
+                <div class="hidden lg:block bg-gray-100 dark:bg-gray-700 p-4 rounded-md">
+                  <p class="text-sm text-gray-700 dark:text-gray-300">
+                    You are viewing this content on a large screen. Resize the window to hide this section!
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3: Dark Mode Support -->
+            <div class="w-full md:w-1/3 px-4 mb-8">
+              <div class="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-8 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-bold mb-4">Dark Mode Card</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-4">
+                  This card automatically switches styles when dark mode is activated. Try switching your system to dark mode to see the changes.
+                </p>
+                <a href="#" class="inline-block bg-gray-800 dark:bg-gray-200 text-gray-200 dark:text-gray-800 py-2 px-4 rounded-lg font-semibold hover:bg-gray-600 dark:hover:bg-gray-400 transition-all">Learn More</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      
+      <!-- Custom CSS for Clip Path -->
+      <style>
+        .clip-path-polygon {
+          clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+          z-index: -1;
+          opacity: 0.5;
+        }
+      </style>
+
+      
+    <!-- Feature 6: Responsive Footer with Flexbox -->
+    <footer class="bg-gray-800 py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center text-gray-400">
+          <p>&copy; 2024 Tailwind World. All rights reserved.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white">Privacy Policy</a>
+            <a href="#" class="hover:text-white">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
